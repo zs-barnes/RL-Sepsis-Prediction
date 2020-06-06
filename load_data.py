@@ -74,3 +74,6 @@ def load_data():
     data_frames = [clean_data(load_single_file(d)) for d in data]
     merged = pd.concat(data_frames)
     return merged
+
+if __name__ == "__main__":
+    load_data()
