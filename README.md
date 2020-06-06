@@ -1,7 +1,7 @@
 # RL-Sepsis-Prediction
 Using public data from https://physionet.org/content/challenge-2019/1.0.0/
 
-we're creating RL model to classify patients with sepsis at each hour.
+We're designing a reinforcement learning envioronment and model to classify patients with sepsis at each hour.
 
 The RL environment is using open ai's gym : https://github.com/openai/gym
 
