@@ -32,3 +32,11 @@ df = load_data()
 ```
 
 where df is a pandas data frame. 
+
+# Add Rewards
+Using the utility function provided by the competition, 
+we have added two columns that correspond to the reward
+recieved at each hour depending on whether predicting a zero or a one.
+
+To create the reward columns, run:
+`make add_reward`
