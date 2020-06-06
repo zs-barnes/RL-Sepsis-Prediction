@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import re
 import numpy as np
+from tqdm import tqdm
 from cache_em_all import Cachable
 
 DATA_DIR = "data/training_setA/"  # Path to the data
@@ -71,7 +72,7 @@ def get_data_files():
 @Cachable('training_setA.csv')
 def load_data():
     data = get_data_files()
-    data_frames = [clean_data(load_single_file(d)) for d in data]
+    data_frames = [clean_data(load_single_file(d)) for d in tqdm(data)]
     merged = pd.concat(data_frames)
     return merged
 
