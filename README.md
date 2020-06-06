@@ -22,7 +22,7 @@ To load and clean the data, run:
 `make load_data`
 
 This will take about 10 minutes, and the progress bar will be displayed using tqdm. It will create 
-a `cache\` directory, created from the cache_em_all package.
+a `cache\` directory, (created from the cache_em_all package) where the cleaned data will be stored.
 
 Now, in a notebook or .py file, you can load the data with  
 
@@ -40,3 +40,6 @@ recieved at each hour depending on whether predicting a zero or a one.
 
 To create the reward columns, run:
 `make add_reward`
+
+This should only take 10-15 seconds, and will add the file training_setA_rewards under the `cache\`
+directory
