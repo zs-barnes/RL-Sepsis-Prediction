@@ -1,0 +1,12 @@
+HR|O2Sat|Temp|SBP|MAP|DBP|Resp|EtCO2|BaseExcess|HCO3|FiO2|pH|PaCO2|SaO2|AST|BUN|Alkalinephos|Calcium|Chloride|Creatinine|Bilirubin_direct|Glucose|Lactate|Magnesium|Phosphate|Potassium|Bilirubin_total|TroponinI|Hct|Hgb|PTT|WBC|Fibrinogen|Platelets|Age|Gender|Unit1|Unit2|HospAdmTime|ICULOS|SepsisLabel
+89|98|36.11|116.5|84.83|NaN|22|NaN|NaN|18|NaN|NaN|NaN|NaN|NaN|44|NaN|8.5|103|5.5|NaN|174|NaN|1.7|4.7|5.6|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|68.6|1|1|0|-0.04|5|0
+87|98|NaN|129|88.33|NaN|16|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|68.6|1|1|0|-0.04|6|1
+82|100|NaN|104|72|NaN|14|NaN|-5|NaN|NaN|7.32|40|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|5.7|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|68.6|1|1|0|-0.04|7|1
+86|100|36.11|143|107|NaN|16|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|68.6|1|1|0|-0.04|8|1
+87|99|NaN|112|72.67|NaN|16|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|68.6|1|1|0|-0.04|9|1
+87|99|NaN|127|86.33|NaN|15|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|68.6|1|1|0|-0.04|10|1
+91|100|NaN|135|83.67|NaN|18|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|68.6|1|1|0|-0.04|11|1
+90|95.5|36.11|84|52|NaN|16|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|68.6|1|1|0|-0.04|12|1
+91.5|97.5|NaN|82|55.33|NaN|17|NaN|NaN|20|NaN|NaN|NaN|NaN|25|55|103|7.9|100|6.1|NaN|116|NaN|1.6|5.8|5.3|0.1|NaN|25.8|8.6|37.9|3.7|197|91|68.6|1|1|0|-0.04|13|1
+89|99|NaN|94|59.33|NaN|15|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|68.6|1|1|0|-0.04|14|1
+93|100|NaN|96|61.33|NaN|20|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|68.6|1|1|0|-0.04|15|1

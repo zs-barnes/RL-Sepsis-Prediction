@@ -1,0 +1,11 @@
+HR|O2Sat|Temp|SBP|MAP|DBP|Resp|EtCO2|BaseExcess|HCO3|FiO2|pH|PaCO2|SaO2|AST|BUN|Alkalinephos|Calcium|Chloride|Creatinine|Bilirubin_direct|Glucose|Lactate|Magnesium|Phosphate|Potassium|Bilirubin_total|TroponinI|Hct|Hgb|PTT|WBC|Fibrinogen|Platelets|Age|Gender|Unit1|Unit2|HospAdmTime|ICULOS|SepsisLabel
+80.5|92|36.22|NaN|56|NaN|17|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|55.72|1|0|1|-0.02|2|1
+80|92|NaN|103.5|62|50|16|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|55.72|1|0|1|-0.02|3|1
+77|91|NaN|100|62|47|13|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|55.72|1|0|1|-0.02|4|1
+NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|55.72|1|0|1|-0.02|5|1
+NaN|94|NaN|NaN|NaN|NaN|NaN|NaN|0|27|NaN|7.21|74|NaN|24|72|141|7.1|97|2|NaN|113|1.4|2.3|5.7|4.9|0.9|NaN|28.2|9.3|52|25.5|NaN|216|55.72|1|0|1|-0.02|6|1
+89|98|NaN|98|65.5|49.5|16.25|NaN|0|27|0.8|7.27|57|93|24|72|141|NaN|97|NaN|NaN|109|1.4|2.3|NaN|4.9|NaN|NaN|28.2|9.3|NaN|25.5|NaN|NaN|55.72|1|0|1|-0.02|7|1
+75|94|36.11|123|79|60|20|NaN|1.5|NaN|NaN|7.35|51|94.5|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|55.72|1|0|1|-0.02|8|1
+68|95|NaN|118|76|58|22|NaN|3|NaN|0.7|7.38|NaN|96|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|55.72|1|0|1|-0.02|9|1
+68|100|NaN|121|78|59|22|NaN|4|NaN|NaN|7.41|47|97|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|29|9.5|NaN|NaN|NaN|NaN|55.72|1|0|1|-0.02|10|1
+64|97|NaN|119|73|54|22|NaN|4|NaN|NaN|7.41|NaN|97|NaN|70|NaN|NaN|NaN|1.8|NaN|NaN|NaN|NaN|NaN|4.5|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|55.72|1|0|1|-0.02|11|1

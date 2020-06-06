@@ -1,0 +1,12 @@
+HR|O2Sat|Temp|SBP|MAP|DBP|Resp|EtCO2|BaseExcess|HCO3|FiO2|pH|PaCO2|SaO2|AST|BUN|Alkalinephos|Calcium|Chloride|Creatinine|Bilirubin_direct|Glucose|Lactate|Magnesium|Phosphate|Potassium|Bilirubin_total|TroponinI|Hct|Hgb|PTT|WBC|Fibrinogen|Platelets|Age|Gender|Unit1|Unit2|HospAdmTime|ICULOS|SepsisLabel
+111|NaN|35.28|123|72|51|16.5|NaN|-12|NaN|1|7.1|57|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|241|6.3|NaN|NaN|4.7|NaN|NaN|32|10.5|NaN|NaN|NaN|NaN|82.6|1|NaN|NaN|-0.03|2|0
+103|NaN|NaN|99|56|40|16|NaN|-9|NaN|NaN|7.26|37|95|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|5.5|NaN|NaN|4.8|NaN|NaN|35|11.5|NaN|NaN|NaN|NaN|82.6|1|NaN|NaN|-0.03|3|0
+104|NaN|NaN|90|52|37|16|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|82.6|1|NaN|NaN|-0.03|4|0
+109|25|37|95|56|39|16|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|82.6|1|NaN|NaN|-0.03|5|0
+113|59|NaN|98|58|41|19|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|82.6|1|NaN|NaN|-0.03|6|0
+112|81|37.28|93|55|39|19|NaN|NaN|NaN|1|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|82.6|1|NaN|NaN|-0.03|7|0
+112|72|NaN|89|52|38|13|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|82.6|1|NaN|NaN|-0.03|8|0
+112|NaN|NaN|91|53|38|17|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|82.6|1|NaN|NaN|-0.03|9|0
+115|NaN|NaN|86|47|32|18|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|82.6|1|NaN|NaN|-0.03|10|0
+118|92|38.94|105|65|48|18|NaN|NaN|NaN|1|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|82.6|1|NaN|NaN|-0.03|11|0
+123|NaN|NaN|93|55|39|23|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|82.6|1|NaN|NaN|-0.03|12|0

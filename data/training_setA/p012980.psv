@@ -1,0 +1,13 @@
+HR|O2Sat|Temp|SBP|MAP|DBP|Resp|EtCO2|BaseExcess|HCO3|FiO2|pH|PaCO2|SaO2|AST|BUN|Alkalinephos|Calcium|Chloride|Creatinine|Bilirubin_direct|Glucose|Lactate|Magnesium|Phosphate|Potassium|Bilirubin_total|TroponinI|Hct|Hgb|PTT|WBC|Fibrinogen|Platelets|Age|Gender|Unit1|Unit2|HospAdmTime|ICULOS|SepsisLabel
+NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|61.8|1|NaN|NaN|-0.72|1|0
+77.5|98.5|NaN|111.5|88.5|NaN|13|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|4.4|NaN|NaN|NaN|NaN|NaN|NaN|NaN|240|61.8|1|NaN|NaN|-0.72|2|0
+68|NaN|NaN|104|73.33|NaN|16|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|61.8|1|NaN|NaN|-0.72|3|0
+63|96|NaN|109|79.67|NaN|14|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|61.8|1|NaN|NaN|-0.72|4|0
+60|95|NaN|119|85.67|NaN|17|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|61.8|1|NaN|NaN|-0.72|5|0
+57|97|NaN|94|66.67|NaN|14|NaN|NaN|28|NaN|NaN|NaN|NaN|477|15|NaN|9.2|107|0.8|NaN|128|NaN|2|3.7|4.3|NaN|NaN|38.4|13.8|23.7|14.8|NaN|242|61.8|1|NaN|NaN|-0.72|6|0
+72|95|NaN|115|83|NaN|15|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|61.8|1|NaN|NaN|-0.72|7|0
+54|98|NaN|98|64|NaN|14|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|61.8|1|NaN|NaN|-0.72|8|0
+63|96|36.83|118|83.33|NaN|11|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|61.8|1|NaN|NaN|-0.72|9|0
+60|NaN|NaN|115|81|NaN|13|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|61.8|1|NaN|NaN|-0.72|10|0
+60|96|NaN|119|82.33|NaN|12|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|61.8|1|NaN|NaN|-0.72|11|0
+61|94|NaN|109|66.33|NaN|18|NaN|NaN|NaN|NaN|NaN|NaN|NaN|NaN|15|NaN|NaN|NaN|0.7|NaN|NaN|NaN|NaN|NaN|4.1|NaN|NaN|37.1|NaN|NaN|NaN|NaN|236|61.8|1|NaN|NaN|-0.72|12|0
