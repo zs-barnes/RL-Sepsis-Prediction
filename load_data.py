@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import re
 import numpy as np
 from cache_em_all import Cachable
 
@@ -48,7 +49,7 @@ demographic_std = np.array([16.1887, 0.4981, 0.7968, 0.8029, 160.8846, 29.5367])
 def load_single_file(file_path):
     df = pd.read_csv(file_path, sep='|')
     df['hours'] = df.index
-    df['patient'] = file_path[22:-4]
+    df['patient'] = re.search('p(.*?).psv', file_path).group(1)
     return df
 
 def clean_data(data):
