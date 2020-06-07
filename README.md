@@ -33,6 +33,9 @@ df = load_data()
 
 where df is a pandas data frame. 
 
+Alternatively, once you clone this repo you can open up `Load_Data.ipynb` and run all the cells.  If no error is thrown, then you have loaded the data successfully.
+
+
 # Add Rewards
 Using the utility function provided by the competition, 
 we have added two columns that correspond to the reward
