@@ -1,7 +1,7 @@
 # RL-Sepsis-Prediction
 Using public data from https://physionet.org/content/challenge-2019/1.0.0/
 
-We're designing a reinforcement learning envioronment and model to classify patients with sepsis at each hour.
+We're designing a reinforcement learning environment and model to classify patients with sepsis at each hour.
 
 The RL environment is using open ai's gym : https://github.com/openai/gym
 
@@ -32,6 +32,9 @@ df = load_data()
 ```
 
 where df is a pandas data frame. 
+
+Alternatively, once you clone this repo you can open up `Load_Data.ipynb` and run all the cells.  If no error is thrown, then you have loaded the data successfully.
+
 
 # Add Rewards
 Using the utility function provided by the competition, 
