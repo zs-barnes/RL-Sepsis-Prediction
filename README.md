@@ -46,3 +46,8 @@ To create the reward columns, run:
 
 This should only take 10-15 seconds, and will add the file "training_setA_rewards" under the `cache\`
 directory.
+
+# Train Model
+To see the RL train, simply run
+`make train_model`.
+Currently, the output has errors, and the only output from the render function from our Gym environment is the current timestep, which corresponds to the index of the pandas dataframe.
