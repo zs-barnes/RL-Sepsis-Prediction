@@ -4,3 +4,6 @@ load_data:
 add_reward:
 	echo Creating Reward Columns..
 	python add_reward.py
+
+train_model:
+	python main.py
