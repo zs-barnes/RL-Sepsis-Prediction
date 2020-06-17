@@ -5,6 +5,11 @@ We're designing a reinforcement learning environment and model to classify patie
 
 The RL environment is using open ai's gym : https://github.com/openai/gym
 
+Creating custom gym environemtn and RL training code from <br />
+https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e
+
+RL algorithms from the https://github.com/hill-a/stable-baselines package.
+
 # Install dependencies
 If using conda, create an environment with python 3.7:
 `conda create -n rl_sepsis python=3.7`
@@ -50,4 +55,4 @@ directory.
 # Train Model
 To see the RL train, simply run
 `make train_model`.
-Currently, the output has errors, and the only output from the render function from our Gym environment is the current timestep, which corresponds to the index of the pandas dataframe.
+Currently, the output contains future warnings, and the only output from the render function from our Gym environment is the current timestep, which corresponds to the index of the pandas dataframe. The training loss is printed from the stablebaslines Multi-layer Perceptron model.
