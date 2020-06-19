@@ -3,10 +3,10 @@ Final Project Check-in
 - Name(s): Zachary Barnes & Mundy Reimer 
 - Finalized Research Question (1): Can a reinforcement learning agent learn to classify sepsis patients at each hour?
 - The following working code in GitHub (3): 
-    * All code [found here](https://github.com/zs-barnes/RL-Sepsis-Prediction
+    * All code [found here](https://github.com/zs-barnes/RL-Sepsis-Prediction)
     * How to setup environment, load data, create rewards, and train model [here](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/README.md)
     * Comparison of results of random actions vs. learning [here](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/gym_env_w_random.ipynb)
-    - A environment (1):  See  
+    - A environment (1)  
     - An agent that performs random actions in the environment (1) 
     - An agent that learns based on the environment (1)
 - List of ideas to finish project (1):
