@@ -5,10 +5,7 @@ Final Project Check-in
 - The following working code in GitHub (3): 
     * All code [found here](https://github.com/zs-barnes/RL-Sepsis-Prediction)
     * How to setup environment, load data, create rewards, and train model [here](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/README.md)
-    * Comparison of results of random actions vs. learning [here](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/gym_env_w_random.ipynb)
-    - A environment (1)  
-    - An agent that performs random actions in the environment (1) 
-    - An agent that learns based on the environment (1)
+    * Comparison of results of performing random actions vs. learning [here](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/gym_env_w_random.ipynb).  See end of notebook for results.
 - List of ideas to finish project (1):
     * Try out a different optimizer besides Multi-Layer Perceptron (MLP), maybe RNN-LSTM, or CNN-LSTM?
     * Figure out how to configure our training so that individual patients are separate and each patient has their own associated episodes (right now all patients' data are grouped together as one continuous multivariate timeseries)
