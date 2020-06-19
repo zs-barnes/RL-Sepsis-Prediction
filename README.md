@@ -3,7 +3,7 @@
 
 We're designing a reinforcement learning environment and model to classify patients with sepsis at each hour.
 
-The RL environment is using open ai's gym : https://github.com/openai/gym
+The RL environment is using OpenAI's gym : https://github.com/openai/gym
 
 Creating custom gym environment and RL training code from <br />
 https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e
@@ -55,4 +55,4 @@ directory.
 # Train Model
 To see the RL train, simply run
 `make train_model`.
-Currently, the output contains future warnings, and the only output from the render function from our Gym environment is the current timestep, which corresponds to the index of the pandas dataframe. The training loss is printed from the stablebaslines Multi-layer Perceptron model.
+Currently, the output contains future warnings, and the only output from the render function from our Gym environment is the current timestep, which corresponds to the index of the pandas dataframe. The training loss is printed from the stablebaselines Multi-layer Perceptron model.
