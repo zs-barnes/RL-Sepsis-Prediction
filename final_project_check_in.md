@@ -1,7 +1,7 @@
 Final Project Check-in 
 
 - Name(s): Zachary Barnes & Mundy Reimer 
-- Finalized Research Question (1): Can a reinforcement learning agent learn to classify sepsis patients at each hour?
+- Finalized Research Question (1): Can a reinforcement learning agent learn to classify sepsis patients at each hour given a multivariate timeseries of patients vitals?
 - The following working code in GitHub (3): 
     * All code [found here](https://github.com/zs-barnes/RL-Sepsis-Prediction)
     * How to setup environment, load data, create rewards, and train model [here](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/README.md)
