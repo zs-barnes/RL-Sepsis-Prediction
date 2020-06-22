@@ -78,14 +78,26 @@ def add_reward(labels, prediction=None):
         preds = np.ones(len(labels))
     return pd.Series(compute_prediction_utility(labels, preds))
 
-@Cachable('training_setA_rewards.csv')
 def add_reward_df(df):
     group = df.groupby('patient')
     df['zeros_reward'] = group.SepsisLabel.apply(add_reward, prediction='zero')
     df['ones_reward'] = group.SepsisLabel.apply(add_reward, prediction='one')
+    return df
+
+def add_end_episode(df):
+    n = df.shape[0]
+    end_episode = np.zeros(n)
+    end_episode[-1] = 1
+    return pd.Series(end_episode)
+
+@Cachable('training_setA_rewards.csv')
+def add_end_episode_df(df):
+    group = df.groupby('patient')
+    df['end_episode'] = group.hours.apply(add_end_episode)
     return df
     
 
 if __name__ == "__main__":
     df = load_data()
     add_reward_df(df)
+    add_end_episode_df(df)
