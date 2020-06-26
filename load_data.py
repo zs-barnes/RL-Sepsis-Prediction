@@ -5,6 +5,8 @@ import numpy as np
 from tqdm import tqdm
 from cache_em_all import Cachable
 
+# Data preparation code from https://c4m-uoft.github.io/projects/physionet/physionet2019_handout.pdf
+
 DATA_DIR = "data/training_setA/"  # Path to the data
 
 # Names of all columns in the data that contain physiological data
@@ -48,12 +50,19 @@ demographic_mean = np.array([60.8711, 0.5435, 0.0615, 0.0727, -59.6769, 28.4551]
 demographic_std = np.array([16.1887, 0.4981, 0.7968, 0.8029, 160.8846, 29.5367])
 
 def load_single_file(file_path):
+    '''
+    Create pandas df from each file, and add hour and patient column.
+    '''
     df = pd.read_csv(file_path, sep='|')
     df['hours'] = df.index
     df['patient'] = re.search('p(.*?).psv', file_path).group(1)
     return df
 
 def clean_data(data):
+    '''
+    Normalize data and fill in missing values
+    with 0.
+    '''
     data.reset_index(inplace=True, drop=True)
 
     # Normalizes physiological and demographic data using z-score.
@@ -67,10 +76,16 @@ def clean_data(data):
 
     
 def get_data_files():
+    '''
+    Helper function to read in data from the given directory.
+    '''
     return [os.path.join(DATA_DIR, x) for x in sorted(os.listdir(DATA_DIR)) if int(x[1:-4]) % 5 > 0]
 
 @Cachable('training_setA.csv')
 def load_data():
+    '''
+    Combine each PSV into one contiuous pandas df, and cache as training_setA.csv.
+    '''
     data = get_data_files()
     data_frames = [clean_data(load_single_file(d)) for d in tqdm(data)]
     merged = pd.concat(data_frames)

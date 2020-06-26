@@ -6,6 +6,14 @@ from load_data import load_data
 # Utuility function from physionet competition: 
 # https://github.com/physionetchallenges/evaluation-2019/blob/master/evaluate_sepsis_score.py
 def compute_prediction_utility(labels, predictions, dt_early=-12, dt_optimal=-6, dt_late=3.0, max_u_tp=1, min_u_fn=-2, u_fp=-0.05, u_tn=0, check_errors=True):
+    '''
+    Inputs:
+    labels: Actual sepsis labels for each hour, a numpy array of 0 or 1.
+    predictions: Output from model, also a numpy array of 0 or 1.
+    
+    Output:
+    Utility at each hour.
+    '''
     # Check inputs for errors.
     if check_errors:
         if len(predictions) != len(labels):
@@ -72,6 +80,9 @@ def compute_prediction_utility(labels, predictions, dt_early=-12, dt_optimal=-6,
     return u
 
 def add_reward(labels, prediction=None):
+    '''
+    Helper function to be used in the pandas apply.
+    '''
     if prediction == 'zero':
         preds = np.zeros(len(labels))
     elif prediction == 'one':
@@ -79,12 +90,18 @@ def add_reward(labels, prediction=None):
     return pd.Series(compute_prediction_utility(labels, preds))
 
 def add_reward_df(df):
+    '''
+    Create reward columns for dataframe.
+    '''
     group = df.groupby('patient')
     df['zeros_reward'] = group.SepsisLabel.apply(add_reward, prediction='zero')
     df['ones_reward'] = group.SepsisLabel.apply(add_reward, prediction='one')
     return df
 
 def add_end_episode(df):
+    '''
+    Helper function to signify end of a patient's observations.
+    '''
     n = df.shape[0]
     end_episode = np.zeros(n)
     end_episode[-1] = 1
@@ -92,6 +109,10 @@ def add_end_episode(df):
 
 @Cachable('training_setA_rewards.csv')
 def add_end_episode_df(df):
+    '''
+    Mark the end of a patients observation, to be used 
+    in Open Ai gym environment to signal the end of an episode.
+    '''
     group = df.groupby('patient')
     df['end_episode'] = group.hours.apply(add_end_episode)
     return df
