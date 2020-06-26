@@ -76,6 +76,8 @@ The below plot nicely summarizes our results, with both versions of our Deep Q-L
 
 Having both our Deep Q-Learning Networks perform the best makes sense since it combines Q-Learning with the power of deep neural networks to let RL work for complex, high-dimensional environments like our multivariate space of all the patient's vital signs.
 
+# Next Steps
+
 For future direction, we will attempt to tease out the differences between the different Deep Q-Learning Networks and explore the potential benefits or pitfalls of providing layer normalization versus not. Since this is medical data where each feature is interpretable, this also lends itself quite well to feature engineering depending upon domain expertise input provided by a medical professional. We can also run this on alternative data sets to validate our work outside these three hospitals to see if this is generalizable.
 
 -----
