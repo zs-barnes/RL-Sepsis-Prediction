@@ -2,21 +2,59 @@
 
 We're designing a reinforcement learning environment and model to classify patients with sepsis at each hour.
 
-A video presentation of our project can be found here.  
+A video presentation of our project can be found [here]().
+
+The step-by-step results of our project can be found in our notebook [here](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/Viz.ipynb).
+
+# Introduction
 
 Sepsis is a life-threatening condition that arises when the body's response to infection causes injury to its tissues and organs. It is the most common cause of death for people who have been hospitalized, and results in a $15.4 billion annual cost in the US.  Early detection and treatment are essential for prevention and a 1-hour delay in antibiotic treatment can lead to 4% increase in hospital mortality.  Given the nature of our data as a multivariate timeseries of patient vital signs, this makes this an ideal classification problem to apply reinforcement learning methods to.
 
-# Sources
+# Data
 
 We used a public data set from the [PhysioNet Computing Challenge which can be downloaded here](https://physionet.org/content/challenge-2019/1.0.0/) ![physionet_logo]()
 
+An explanation by the PhysioNet Challenge is given below:
+
+Data used in the competition is sourced from ICU patients in three separate hospital systems.  
+
+The data repository contains one file per subject (e.g., training/p00101.psv for the training data).  Each training data file provides a table with measurements over time. Each column of the table provides a sequence of measurements over time (e.g., heart rate over several hours), where the header of the column describes the measurement. Each row of the table provides a collection of measurements at the same time (e.g., heart rate and oxygen level at the same time). The table is formatted in the following way:
+
+![physionet_data_table]()
+
+There are 40 time-dependent variables HR, O2Sat, Temp ..., HospAdmTime, which are described here. The final column, SepsisLabel, indicates the onset of sepsis according to the Sepsis-3 definition, where 1 indicates sepsis and 0 indicates no sepsis. Entries of NaN (not a number) indicate that there was no recorded measurement of a variable at the time interval.
+
+# Environment
+
 Our Reinforcement Learning environment is using [OpenAI's gym](https://github.com/openai/gym).
 
-For instructions on creating a custom gym environment with RL training code [see here](https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e).
+For step-by-step instructions for how to set up your environment, see the section below on *Setup*.
 
-For instructions on creating RL algorithms using Stable Baselines package [see here](https://github.com/hill-a/stable-baselines).
+To create this environment, we referenced:
+* Instructions on how to create a custom gym environment with RL training code [here](https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e).
+* Instructions on creating RL algorithms using the Stable Baselines package [here](https://github.com/hill-a/stable-baselines).
 
-# Install dependencies
+# Evaluation
+
+The algorithm will be evaluated by its performance as a binary classifier using a utility function created by the [PhysioNet Challenge](https://physionet.org/content/challenge-2019/1.0.0/). This utility function rewards classifiers for early predictions of sepsis and penalizes them for late/missed predictions and for predictions of sepsis in non-sepsis patients.
+
+The PhysioNet defines a score U(s,t) for each prediction, i.e., for each patient s and each time interval t (each line in the data file) as such:
+
+![physionet_utility]()
+
+The following figure shows the utility function for a sepsis patient with t_sepsis = 48 as an example (figure from [PhysioNet Challenge](https://physionet.org/content/challenge-2019/1.0.0/)):
+
+![physionet_utility_plot]()
+
+We then compared performance across multiple algorithms.  You can check out our notebook here for more, but the below plot nicely summarizes our results, with both versions of our Deep Q-Learning Network with Multi-Layer Perceptrons performing the best, and our random baseline model performing the worst:
+
+![visualization_anim]()
+
+-----
+
+# Setup:
+
+## Install dependencies
 If using conda, create an environment with python 3.7:
 `conda create -n rl_sepsis python=3.7`
 
@@ -26,7 +64,7 @@ Activate the environment:
 Then, install the necessary packages:
 `pip install -r requirements.txt`
 
-# Clean data
+## Clean data
 We have upload training set A from the physionet competition into the repo.
 To load and clean the data, run:
 
@@ -47,7 +85,7 @@ where df is a pandas data frame.
 Alternatively, once you clone this repo you can open up `Load_Data.ipynb` and run all the cells.  If no error is thrown, then you have loaded the data successfully.
 
 
-# Add Rewards
+## Add Rewards
 Using the utility function provided by the competition, 
 we have added two columns that correspond to the reward
 recieved at each hour depending on whether predicting a zero or a one.
