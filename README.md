@@ -1,4 +1,5 @@
-# RL-Sepsis-Prediction
+# Classifying Sepsis Patients with Reinforcement Learning¶
+Contributors: [Zachary Barnes](https://www.linkedin.com/in/zachary-barnes-usf) & [Mundy Reimer](https://www.linkedin.com/in/mundyreimer)
 
 We designed a reinforcement learning environment and model to classify patients with sepsis at each hour.
 
