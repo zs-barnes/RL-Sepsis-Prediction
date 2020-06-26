@@ -129,7 +129,7 @@ directory.
 ## 4) Train Model
 To see the RL train, simply run
 `make train_model`.
-Currently, the output contains future warnings, and the only output from the render function from our Gym environment is considered in the current timestep, which corresponds to the index of the pandas dataframe. The training loss is printed from the stable baselines Multi-layer Perceptron model.
+This will train 9 models for roughly 1,300 patients. Progress bar with model, policy and rewards will be displayed.
 
 ## 5) Results
 To see graphical results of performance for the different baseline models, [see our visualization notebook](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/Viz.ipynb).  
