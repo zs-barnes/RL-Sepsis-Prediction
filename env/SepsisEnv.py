@@ -28,7 +28,7 @@ class SepsisEnv(gym.Env):
         # Observation space is a feature vector of 41 vital signs, 
         # lab values, and other demographic information
         self.observation_space = spaces.Box(
-            low=-25.545204389483803, high=335.0, shape=(1, 42), dtype=np.float16)
+            low=MIN_OBSERVATION, high=MAX_OBSERVATION, shape=(1, 42), dtype=np.float16)
 
     def _next_observation(self):
         '''Set the next observation state'''
@@ -47,8 +47,6 @@ class SepsisEnv(gym.Env):
         '''Execute one time step within the environment'''
         
         self.current_step += 1
-#         print('current step', self.current_step)
-#         print('index', self.index)
 
         done = False
         if action == 0:
@@ -69,9 +67,7 @@ class SepsisEnv(gym.Env):
     def reset(self):
         '''Reset the state of the environment to an initial state'''
         
-        # Set the current step to a random point within the data frame
-#         self.current_step = np.random.choice(patient_start_index)
-
+        # Set the current step to an index  within the data frame
         self.current_step = self.patient_start_index[self.index]
 
         return self._next_observation()
