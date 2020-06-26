@@ -20,7 +20,7 @@ An explanation by the PhysioNet Challenge is given below:
 
 Data used in the competition is sourced from ICU patients in three separate hospital systems.  
 
-The data repository contains one file per subject (e.g., training/p00101.psv for the training data).  Each training data file provides a table with measurements over time. Each column of the table provides a sequence of measurements over time (e.g., heart rate over several hours), where the header of the column describes the measurement. Each row of the table provides a collection of measurements at the same time (e.g., heart rate and oxygen level at the same time). The table is formatted in the following way:
+The data repository contains one file per subject (ex - training/p00101.psv).  Each training data file provides a table with measurements over time. Each column of the table provides a sequence of measurements over time (ex - heart rate over several hours), where the header of the column describes the measurement. Each row of the table provides a collection of measurements at the same time (ex - heart rate and oxygen level). The table is formatted in the following way:
 
 ![physionet_data_table](/images/physionet_data_table.png)
 
@@ -38,9 +38,9 @@ To create this environment, we referenced:
 
 # Evaluation
 
-The algorithm will be evaluated by its performance as a binary classifier using a utility function created by the [PhysioNet Challenge](https://physionet.org/content/challenge-2019/1.0.0/). This utility function rewards classifiers for early predictions of sepsis and penalizes them for late/missed predictions and for predictions of sepsis in non-sepsis patients.
+The algorithm will be evaluated by its performance as a binary classifier using a utility function created by the [PhysioNet Challenge](https://physionet.org/content/challenge-2019/1.0.0/). This utility function rewards classifiers for early predictions of sepsis and penalizes them for late predictions and for predictions of sepsis in non-sepsis patients.
 
-The PhysioNet defines a score U(s,t) for each prediction.  This will be done for each line in the data file that represents each patient s and each time interval t:
+The PhysioNet Challenge defines a score U(s,t) for each prediction.  This will be done for each line in the data file that represents each patient s and each time interval t:
 
 ![physionet_utility](/images/physionet_utility.png)
 
@@ -90,7 +90,7 @@ Alternatively, once you clone this repo you can open up `Load_Data.ipynb` and ru
 ## 3) Add Rewards
 Using the utility function provided by the competition, 
 we have added two columns that correspond to the reward
-recieved at each hour depending on whether predicting a zero or a one.
+received at each hour depending on whether predicting a zero or a one.
 
 To create the reward columns, run:
 `make add_reward`
@@ -101,4 +101,7 @@ directory.
 ## 4) Train Model
 To see the RL train, simply run
 `make train_model`.
-Currently, the output contains future warnings, and the only output from the render function from our Gym environment is the current timestep, which corresponds to the index of the pandas dataframe. The training loss is printed from the stablebaselines Multi-layer Perceptron model.
+Currently, the output contains future warnings, and the only output from the render function from our Gym environment is considered in the current timestep, which corresponds to the index of the pandas dataframe. The training loss is printed from the stable baselines Multi-layer Perceptron model.
+
+## 5) Results
+To see graphical results of performance for the different baseline models, [see our visualization notebook](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/Viz.ipynb).  
