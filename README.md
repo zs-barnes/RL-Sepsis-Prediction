@@ -39,11 +39,11 @@ To create this environment, we referenced:
 * Creating RL algorithms using the Stable Baselines package [here](https://github.com/hill-a/stable-baselines).
 
 We can briefly frame our reinforcement learning problem as such:
-* Environment: SepsisEnv modeled using OpenAI Gym, where we have a sequential multivariate timeseries of patients' vital signs
-* Agent: A binary classifier that predicts whether patients have sepsis or not
-* States: Each timestep that contains multiple patient vital signs taken at the same time
-* Actions: Binary prediction of whether a patient has sepsis (1) or does not (0)
-* Rewards: The calculated score between 1 and -2 based on the utility function calculated from true/false positive and true/false negative rates
+* Environment - SepsisEnv modeled using OpenAI Gym, where we have a sequential multivariate timeseries of patients' vital signs
+* Agent - A binary classifier that predicts whether patients have sepsis or not
+* States - Each timestep that contains multiple patient vital signs taken at the same time
+* Actions - Binary prediction of whether a patient has sepsis (1) or does not (0)
+* Rewards - The calculated score between 1 and -2 based on the utility function calculated from true/false positive and true/false negative rates
 
 The algorithm will be evaluated by its performance as a binary classifier using a utility function created by the [PhysioNet Challenge](https://physionet.org/content/challenge-2019/1.0.0/). This utility function rewards classifiers for early predictions of sepsis and penalizes them for late predictions and for predictions of sepsis in non-sepsis patients.
 
@@ -60,14 +60,13 @@ The following figure shows the utility function for a sepsis patient with t_seps
 We then compared performance across multiple algorithms.  You can check out our notebook [here](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/Viz.ipynb) for more.
 
 In total, we compare:
-
-Proximal Policy Optimization Algorithm + Multi-Layer Perceptron
-Proximal Policy Optimization Algorithm + Multi-Layer Perceptron Long-Short Term Memory
-Proximal Policy Optimization Algorithm + Multi-Layer Perceptron Long-Short Term Memory with Layer Normalization
-Synchronous, deterministic variant of Asynchronous Advantage Actor Critic + Multi-Layer Perceptron
-Synchronous, deterministic variant of Asynchronous Advantage Actor Critic + Multi-Layer Perceptron Long-Short Term Memory
-Deep Q Network + Multi-Layer Perceptron
-Deep Q Network + Multi-Layer Perceptron Long-Short Term Memory
+* Proximal Policy Optimization Algorithm + Multi-Layer Perceptron
+* Proximal Policy Optimization Algorithm + Multi-Layer Perceptron Long-Short Term Memory
+* Proximal Policy Optimization Algorithm + Multi-Layer Perceptron Long-Short Term Memory with Layer Normalization
+* Synchronous, deterministic variant of Asynchronous Advantage Actor Critic + Multi-Layer Perceptron
+* Synchronous, deterministic variant of Asynchronous Advantage Actor Critic + Multi-Layer Perceptron Long-Short Term Memory
+* Deep Q Network + Multi-Layer Perceptron
+* Deep Q Network + Multi-Layer Perceptron Long-Short Term Memory
 
 The below plot nicely summarizes our results, with both versions of our Deep Q-Learning Network with Multi-Layer Perceptrons performing the best, all the combinations of A2C and Proximal Policy models performing worse than the Deep Q-Learning Networks, and our random baseline model performing the worst as expected:
 
