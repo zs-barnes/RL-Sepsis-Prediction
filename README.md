@@ -33,8 +33,8 @@ Our Reinforcement Learning environment is using [OpenAI's gym](https://github.co
 For step-by-step instructions for how to set up your environment, see the section below on *Setup*.
 
 To create this environment, we referenced:
-* Instructions on how to create a custom gym environment with RL training code [here](https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e).
-* Instructions on creating RL algorithms using the Stable Baselines package [here](https://github.com/hill-a/stable-baselines).
+* How to create a custom gym environment with RL training code [here](https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e).
+* Creating RL algorithms using the Stable Baselines package [here](https://github.com/hill-a/stable-baselines).
 
 # Evaluation
 
