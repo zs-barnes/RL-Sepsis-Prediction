@@ -2,7 +2,7 @@
 
 We designed a reinforcement learning environment and model to classify patients with sepsis at each hour.
 
-A video presentation of our project can be found [here](), with the accompanying slide deck [here]().
+A video presentation of our project can be found [here](), with the accompanying slide deck [here](https://docs.google.com/presentation/d/1n1qJeaYtgxrKl1SZzBZogm2CBGtXZaygc47oPcONB-4/edit?usp=sharing).
 
 The step-by-step results of our project can be found in our notebook [here](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/Viz.ipynb).
 
