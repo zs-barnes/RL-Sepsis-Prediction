@@ -61,12 +61,12 @@ We then compared performance across multiple algorithms.  You can check out our 
 
 In total, we compare:
 * Proximal Policy Optimization Algorithm + Multi-Layer Perceptron
-* Proximal Policy Optimization Algorithm + Multi-Layer Perceptron Long-Short Term Memory
-* Proximal Policy Optimization Algorithm + Multi-Layer Perceptron Long-Short Term Memory with Layer Normalization
+* Proximal Policy Optimization Algorithm + Multi-Layer Perceptron, Long-Short Term Memory
+* Proximal Policy Optimization Algorithm + Multi-Layer Perceptron, Long-Short Term Memory with Layer Normalization
 * Synchronous, deterministic variant of Asynchronous Advantage Actor Critic + Multi-Layer Perceptron
-* Synchronous, deterministic variant of Asynchronous Advantage Actor Critic + Multi-Layer Perceptron Long-Short Term Memory
+* Synchronous, deterministic variant of Asynchronous Advantage Actor Critic + Multi-Layer Perceptron, Long-Short Term Memory
 * Deep Q Network + Multi-Layer Perceptron
-* Deep Q Network + Multi-Layer Perceptron Long-Short Term Memory
+* Deep Q Network + Multi-Layer Perceptron, Long-Short Term Memory
 
 The below plot nicely summarizes our results, with both versions of our Deep Q-Learning Network with Multi-Layer Perceptrons performing the best, all the combinations of A2C and Proximal Policy models performing worse than the Deep Q-Learning Networks, and our random baseline model performing the worst as expected:
 
