@@ -26,6 +26,8 @@ The data repository contains one file per subject (ex - training/p00101.psv).  E
 
 There are 40 time-dependent variables HR, O2Sat, Temp ..., HospAdmTime, which are described here. The final column, SepsisLabel, indicates the onset of sepsis according to the Sepsis-3 definition, where 1 indicates sepsis and 0 indicates no sepsis. Entries of NaN (not a number) indicate that there was no recorded measurement of a variable at the time interval.
 
+![timeseries](/images/multivariate_timeseries.png)
+
 # Environment
 
 Our Reinforcement Learning environment is using [OpenAI's gym](https://github.com/openai/gym).
