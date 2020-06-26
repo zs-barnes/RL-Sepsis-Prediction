@@ -1,6 +1,6 @@
 # RL-Sepsis-Prediction
 
-We're designing a reinforcement learning environment and model to classify patients with sepsis at each hour.
+We designed a reinforcement learning environment and model to classify patients with sepsis at each hour.
 
 A video presentation of our project can be found [here]().
 
