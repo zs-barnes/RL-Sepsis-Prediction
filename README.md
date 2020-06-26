@@ -52,9 +52,9 @@ We then compared performance across multiple algorithms.  You can check out our 
 
 -----
 
-# Setup:
+# Setup
 
-## Install dependencies
+## 1) Install dependencies
 If using conda, create an environment with python 3.7:
 `conda create -n rl_sepsis python=3.7`
 
@@ -64,7 +64,7 @@ Activate the environment:
 Then, install the necessary packages:
 `pip install -r requirements.txt`
 
-## Clean data
+## 2) Clean data
 We have upload training set A from the physionet competition into the repo.
 To load and clean the data, run:
 
@@ -85,7 +85,7 @@ where df is a pandas data frame.
 Alternatively, once you clone this repo you can open up `Load_Data.ipynb` and run all the cells.  If no error is thrown, then you have loaded the data successfully.
 
 
-## Add Rewards
+## 3) Add Rewards
 Using the utility function provided by the competition, 
 we have added two columns that correspond to the reward
 recieved at each hour depending on whether predicting a zero or a one.
@@ -96,7 +96,7 @@ To create the reward columns, run:
 This should only take 10-15 seconds, and will add the file "training_setA_rewards" under the `cache\`
 directory.
 
-# Train Model
+## 4) Train Model
 To see the RL train, simply run
 `make train_model`.
 Currently, the output contains future warnings, and the only output from the render function from our Gym environment is the current timestep, which corresponds to the index of the pandas dataframe. The training loss is printed from the stablebaselines Multi-layer Perceptron model.
