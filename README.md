@@ -4,17 +4,17 @@ We're designing a reinforcement learning environment and model to classify patie
 
 A video presentation of our project can be found here.  
 
-![Vis](visualization.svg)
+Sepsis is a life-threatening condition that arises when the body's response to infection causes injury to its tissues and organs. It is the most common cause of death for people who have been hospitalized, and results in a $15.4 billion annual cost in the US.  Early detection and treatment are essential for prevention and a 1-hour delay in antibiotic treatment can lead to 4% increase in hospital mortality.  Given the nature of our data as a multivariate timeseries of patient vital signs, this makes this an ideal classification problem to apply reinforcement learning methods to.
 
 # Sources
 
-We used a public data set from the [PhysioNet Computing Challenge which can be downloaded here](https://physionet.org/content/challenge-2019/1.0.0/).
+We used a public data set from the [PhysioNet Computing Challenge which can be downloaded here](https://physionet.org/content/challenge-2019/1.0.0/) ![physionet_logo]()
 
 Our Reinforcement Learning environment is using [OpenAI's gym](https://github.com/openai/gym).
 
 For instructions on creating a custom gym environment with RL training code [see here](https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e).
 
-For instructions on creating RL algorithms using Stable Baselines [see here](https://github.com/hill-a/stable-baselines package).
+For instructions on creating RL algorithms using Stable Baselines package [see here](https://github.com/hill-a/stable-baselines).
 
 # Install dependencies
 If using conda, create an environment with python 3.7:
