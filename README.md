@@ -67,7 +67,7 @@ Then, install the necessary packages:
 `pip install -r requirements.txt`
 
 ## 2) Clean data
-We have upload training set A from the physionet competition into the repo.
+We have uploaded training set A from the physionet competition into the repo.
 To load and clean the data, run:
 
 `make load_data`
