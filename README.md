@@ -1,14 +1,18 @@
 # RL-Sepsis-Prediction
-(Public) Data Set from https://physionet.org/content/challenge-2019/1.0.0/
 
 We're designing a reinforcement learning environment and model to classify patients with sepsis at each hour.
 
-The RL environment is using OpenAI's gym : https://github.com/openai/gym
+A video presentation of our project can be found here.  
 
-Creating custom gym environment and RL training code from <br />
-https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e
+# Sources
 
-RL algorithms from the https://github.com/hill-a/stable-baselines package.
+We used a public data set from the [PhysioNet Computing Challenge which can be downloaded here](https://physionet.org/content/challenge-2019/1.0.0/).
+
+Our Reinforcement Learning environment is using [OpenAI's gym](https://github.com/openai/gym).
+
+For instructions on creating a custom gym environment with RL training code [see here](https://towardsdatascience.com/creating-a-custom-openai-gym-environment-for-stock-trading-be532be3910e).
+
+For instructions on creating RL algorithms using Stable Baselines [see here](https://github.com/hill-a/stable-baselines package).
 
 # Install dependencies
 If using conda, create an environment with python 3.7:
