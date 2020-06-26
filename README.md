@@ -48,7 +48,7 @@ The following figure shows the utility function for a sepsis patient with t_seps
 
 ![physionet_utility_plot](/images/physionet_utility_plot.png)
 
-We then compared performance across multiple algorithms.  You can check out our notebook here for more, but the below plot nicely summarizes our results, with both versions of our Deep Q-Learning Network with Multi-Layer Perceptrons performing the best, and our random baseline model performing the worst:
+We then compared performance across multiple algorithms.  You can check out our notebook [here](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/Viz.ipynb) for more, but the below plot nicely summarizes our results, with both versions of our Deep Q-Learning Network with Multi-Layer Perceptrons performing the best, and our random baseline model performing the worst:
 
 ![visualization_anim](/images/visualization_anim.svg)
 
