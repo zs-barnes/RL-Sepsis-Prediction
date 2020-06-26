@@ -14,7 +14,7 @@ Sepsis is a life-threatening condition that arises when the body's response to i
 
 ![physionet_logo](/images/physionet_logo.jpeg)
 
-We used a public data set from the [PhysioNet Computing Challenge which can be downloaded here](https://physionet.org/content/challenge-2019/1.0.0/).
+We used a public data set from the PhysioNet Computing Challenge [which can be downloaded here](https://physionet.org/content/challenge-2019/1.0.0/).
 
 An explanation by the PhysioNet Challenge is given below:
 
