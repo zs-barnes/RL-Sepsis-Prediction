@@ -4,6 +4,8 @@ We're designing a reinforcement learning environment and model to classify patie
 
 A video presentation of our project can be found here.  
 
+![Vis](visualization.svg)
+
 # Sources
 
 We used a public data set from the [PhysioNet Computing Challenge which can be downloaded here](https://physionet.org/content/challenge-2019/1.0.0/).
