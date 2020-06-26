@@ -74,7 +74,7 @@ The below plot nicely summarizes our results, with both versions of our Deep Q-L
 
 ![visualization_anim](/images/visualization_anim.svg)
 
-Having both our Deep Q-Learning Networks perform the best makes sense since it combines Q-Learning with the power of deep neural networks to let RL work for complex, high-dimensional environments like our multivariate space of all the patient's vital signs.
+Having both our Deep Q-Learning Networks perform the best makes sense since it combines Q-Learning with the power of deep neural networks to let RL work for complex, high-dimensional environments like our multivariate space of all the patient's vital signs.  Because of our large data size of over 20,000 patients, each with roughly 50 records of more than 40-time dependent variables, we can see our agent's learning stabilize over the long term.  And because our space of actions is not complicated (it is a binary variable) we see that our agent can learn this classification problem.      
 
 # Next Steps
 
