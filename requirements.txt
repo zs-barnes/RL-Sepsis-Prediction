@@ -1,7 +1,10 @@
 absl-py==0.9.0
+altair==4.1.0
 astor==0.8.1
+astroid==2.4.2
 atari-py==0.2.6
 attrs==19.3.0
+autopep8==1.5.3
 backcall==0.1.0
 bleach==3.1.4
 cache-em-all==0.2.2
@@ -26,6 +29,7 @@ ipykernel==5.1.4
 ipython==7.13.0
 ipython-genutils==0.2.0
 ipywidgets==7.5.1
+isort==4.3.21
 jedi==0.17.0
 Jinja2==2.11.2
 joblib==0.15.1
@@ -40,9 +44,11 @@ jupyterlab-server==1.1.4
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 kiwisolver==1.2.0
+lazy-object-proxy==1.4.3
 Markdown==3.2.2
 MarkupSafe==1.1.1
 matplotlib==3.2.1
+mccabe==0.6.1
 mistune==0.8.4
 nbconvert==5.6.1
 nbformat==5.0.6
@@ -60,9 +66,11 @@ prompt-toolkit==3.0.5
 protobuf==3.12.2
 ptyprocess==0.6.0
 pyarrow==0.17.1
+pycodestyle==2.6.0
 pycparser==2.20
 pyglet==1.5.0
 Pygments==2.6.1
+pylint==2.5.3
 pyOpenSSL==19.1.0
 pyparsing==2.4.7
 pyrsistent==0.16.0
@@ -83,10 +91,14 @@ tensorflow-estimator==1.14.0
 termcolor==1.1.0
 terminado==0.8.3
 testpath==0.4.4
+toml==0.10.1
+toolz==0.10.0
 tornado==6.0.4
 tqdm==4.46.1
 traitlets==4.3.3
+typed-ast==1.4.1
 urllib3==1.25.8
+vega-datasets==0.8.0
 wcwidth==0.1.9
 webencodings==0.5.1
 Werkzeug==1.0.1
