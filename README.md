@@ -40,7 +40,7 @@ To create this environment, we referenced:
 
 The algorithm will be evaluated by its performance as a binary classifier using a utility function created by the [PhysioNet Challenge](https://physionet.org/content/challenge-2019/1.0.0/). This utility function rewards classifiers for early predictions of sepsis and penalizes them for late/missed predictions and for predictions of sepsis in non-sepsis patients.
 
-The PhysioNet defines a score U(s,t) for each prediction, i.e., for each patient s and each time interval t (each line in the data file) as such:
+The PhysioNet defines a score U(s,t) for each prediction.  This will be done for each line in the data file that represents each patient s and each time interval t:
 
 ![physionet_utility](/images/physionet_utility.png)
 
