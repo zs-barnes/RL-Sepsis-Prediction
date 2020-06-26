@@ -39,7 +39,6 @@ To create this environment, we referenced:
 * Creating RL algorithms using the Stable Baselines package [here](https://github.com/hill-a/stable-baselines).
 
 We can briefly frame our reinforcement learning problem as such:
-
 * Environment: SepsisEnv modeled using OpenAI Gym, where we have a sequential multivariate timeseries of patients' vital signs
 * Agent: A binary classifier that predicts whether patients have sepsis or not
 * States: Each timestep that contains multiple patient vital signs taken at the same time
