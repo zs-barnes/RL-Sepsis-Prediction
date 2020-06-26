@@ -1,11 +1,12 @@
 # Classifying Sepsis Patients with Reinforcement Learning¶
-Contributors: [Zachary Barnes](https://www.linkedin.com/in/zachary-barnes-usf) & [Mundy Reimer](https://www.linkedin.com/in/mundyreimer)
 
 We designed a reinforcement learning environment and model to classify patients with sepsis at each hour.
 
 A video presentation of our project can be found [here]().
 
 The step-by-step results of our project can be found in our notebook [here](https://github.com/zs-barnes/RL-Sepsis-Prediction/blob/master/Viz.ipynb).
+
+Project Contributors: [Zachary Barnes](https://www.linkedin.com/in/zachary-barnes-usf) & [Mundy Reimer](https://www.linkedin.com/in/mundyreimer)
 
 # Introduction
 
