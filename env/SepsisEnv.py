@@ -31,6 +31,7 @@ class SepsisEnv(gym.Env):
             low=-25.545204389483803, high=335.0, shape=(1, 42), dtype=np.float16)
 
     def _next_observation(self):
+        '''Set the next observation state'''
         obs = np.array([
         self.df.loc[self.current_step, ~self.df.columns.isin(['SepsisLabel',
                             'patient', 
@@ -43,7 +44,8 @@ class SepsisEnv(gym.Env):
 
 
     def step(self, action):
-        # Execute one time step within the environment
+        '''Execute one time step within the environment'''
+        
         self.current_step += 1
 #         print('current step', self.current_step)
 #         print('index', self.index)
@@ -65,18 +67,18 @@ class SepsisEnv(gym.Env):
 
     
     def reset(self):
-        # Reset the state of the environment to an initial state
-        # Set the current step to a random point within the data frame
-
-#         self.current_step = np.random.choice(patient_start_index)
-        self.current_step = self.patient_start_index[self.index]
+        '''Reset the state of the environment to an initial state'''
         
+        # Set the current step to a random point within the data frame
+#         self.current_step = np.random.choice(patient_start_index)
 
+        self.current_step = self.patient_start_index[self.index]
 
         return self._next_observation()
 
     def render(self, mode='human', close=False):
-        # Render the environment to the screen
+        '''Render the environment to the screen'''
+        
         print('current step' ,self.current_step)
         print('index', self.index)  
 
