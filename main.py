@@ -27,38 +27,84 @@ import gym
 
 
 def train_model(env, model, total_timesteps, iterations):
+    '''
+    Inputs
+        - env : SepsisEnv created from OpenAI framework
+        - model : specific model such as PPO2, DQN, etc
+        - total_timesteps : total time steps chosen (main bottleneck)
+        - iterations : number of iterations to run model 
+        
+    Output
+        - A list of names, rewards, and patients
+    '''
+    
+    # Initialization of model, observations, rewards, and patients
     model.learn(total_timesteps=total_timesteps)
     reward_list = []
     obs = env.reset()
     patient_count = 0
+    
+    # Run training loop
     for _ in tqdm(range(iterations)):
+        
+        # Predict sepsis or not
         action, _states = model.predict(obs)
+        
+        # Calculate utility from true/false positive/negative rates
         obs, rewards, done, info = env.step(action)
         reward_list.append(rewards)
+        
+        # Reset and redo above for each patient
+        # since each patient has their own corresponding timeseries
         if done:
             patient_count += 1
             obs = env.reset()
         # env.render()
+        
+    # Print results
     print('Model: ', model.__class__)
     print('Policy: ', model.policy)
     print('Total patients: ', patient_count)
     print('Total reward:', sum(reward_list))
 
 def train_baseline_models(df, iterations, constant=False):
+    '''
+    Inputs
+        - df : data
+        - iterations : number of iterations to train model
+        - constant : used to set learning rate
+    Output
+        - Prints model, patient count, and rewards
+        - Returns names and reward list
+    '''
+    
+    # Initialization of rewards, patients, 
+    # Sepsis environment, and observations
     reward_list = []
     env = DummyVecEnv([lambda: SepsisEnv(df)])
     obs = env.reset()
     patient_count = 0
+    
+    # Run training loop
     for _ in tqdm(range(iterations)): 
+        
+        # Either get observations and rewards for a patient
         if constant:
             obs, rewards, done, info = env.step(np.array([0]))
+            
+        # Or predict sepsis and then get observations and rewards
         else:
             action = np.random.choice([0,1], size=1)
             obs, rewards, done, info = env.step(action)
         reward_list.append(rewards)
+        
+        # Reset and redo above for each patient
+        # since each patient has their own corresponding timeseries
         if done:
             patient_count += 1
             obs = env.reset()
+            
+    # Print results
     if constant:
         print('Model: All Non-sepsis')
     else:
