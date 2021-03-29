@@ -70,7 +70,7 @@ pyarrow==0.17.1
 pycodestyle==2.6.0
 pycparser==2.20
 pyglet==1.5.0
-Pygments==2.6.1
+Pygments==2.7.4
 pylint==2.5.3
 pyOpenSSL==19.1.0
 pyparsing==2.4.7
